@@ -6,7 +6,7 @@ print(sklearn.__version__)
 st.success(sklearn.__version__)
 
 # Load the pipeline
-pipeline = joblib.load('xgbpipe.joblib')
+pipeline = joblib.load('mushroom_classifier_pipeline.pkl')
 
 # Input form
 st.title("Mushroom Classification")
