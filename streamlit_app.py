@@ -3,6 +3,7 @@ import joblib
 import pandas as pd
 import sklearn
 print(sklearn.__version__)
+st.success(sklearn.__version__)
 
 # Load the pipeline
 pipeline = joblib.load('xgbpipe.joblib')
