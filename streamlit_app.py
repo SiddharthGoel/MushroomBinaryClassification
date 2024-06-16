@@ -1,6 +1,8 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import sklearn
+print(sklearn.__version__)
 
 # Load the pipeline
 pipeline = joblib.load('xgbpipe.joblib')
