@@ -1,7 +1,6 @@
 import streamlit as st
 import joblib
 import pandas as pd
-import sklearn
 
 # Load the pipeline
 pipeline = joblib.load('mushroom_classifier_pipeline.pkl')
@@ -9,14 +8,6 @@ pipeline = joblib.load('mushroom_classifier_pipeline.pkl')
 # Input form
 st.title("Mushroom Classification")
 st.write("Enter mushroom features to predict if it's edible or poisonous.")
-
-# # Assume columns from the original dataset for user input
-# cols = ['cap-diameter','cap-shape','gill-attachment','gill-color','stem-height','stem-width','stem-color','season']
-
-# # Collect user inputs
-# user_input = {}
-# for col in cols:
-#     user_input[col] = st.text_input(f'Enter {col}:')
 
 # Define the columns
 cols = ['cap-diameter', 'cap-shape', 'gill-attachment', 'gill-color', 'stem-height', 'stem-width', 'stem-color', 'season']
@@ -38,9 +29,9 @@ user_input['stem-width'] = st.number_input('Enter stem-width:', min_value=0, ste
 user_input['stem-color'] = st.selectbox('Select stem-color:', stem_color_options)
 user_input['season'] = st.number_input('Enter season:', min_value=0.0, format='%f')
 
-# Display the user input
-st.write('User Input:')
-st.write(user_input)
+# # Display the user input
+# st.write('User Input:')
+# st.write(user_input)
     
 # Convert the user input into a DataFrame
 input_df = pd.DataFrame([user_input])
