@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Load the pipeline
-pipeline = joblib.load('mushroom_classifier_pipeline.pkl')
+pipeline = joblib.load('mushroom.joblib')
 
 # Input form
 st.title("Mushroom Classification")
