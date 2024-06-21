@@ -7,7 +7,8 @@ Description of the app ...
 
 ## Demo App
 
-[!(https://test-et8j68owdz.streamlit.app/)](https://test-et8j68owdz.streamlit.app/)
+
+https://test-et8j68owdz.streamlit.app/
 
 ## Section Heading
 
