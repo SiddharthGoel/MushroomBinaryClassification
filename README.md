@@ -7,7 +7,7 @@ Description of the app ...
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ml-model-builder-template.streamlit.app/)
+[!(https://test-et8j68owdz.streamlit.app/)](https://test-et8j68owdz.streamlit.app/)
 
 ## Section Heading
 
