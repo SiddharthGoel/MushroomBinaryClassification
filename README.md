@@ -14,7 +14,7 @@
 
 ## Introduction
 
-This project involves building a machine learning model to classify mushrooms as edible or not edible based on various features. The model is trained using a cleaned version of the Mushroom Dataset available at the UCI Machine Learning Repository. The final model, a Random Forest classifier, is deployed as a web application using Streamlit. You can try the app [here](https://test-et8j68owdz.streamlit.app/).
+This project involves building a machine learning model to classify mushrooms as edible or not edible based on various features. The model is trained using a cleaned version of the Mushroom Dataset available at the UCI Machine Learning Repository. The final model, a Random Forest classifier, is deployed as a web application using Streamlit. You can try the app [here](https://mushroombinaryclassification-lxhuuke7odvh4l5bzqgcnr.streamlit.app/).
 
 ## Data Description
 
@@ -34,7 +34,12 @@ The dataset was preprocessed using various techniques such as modal imputation, 
 
 ## Model and Pipeline
 
-The final model chosen for this classification task is a **Random Forest** classifier due to its superior performance in terms of accuracy and robustness.
+The final model chosen for this classification task is a **Random Forest** classifier due to its superior performance in terms of accuracy and robustness. Hyperparameters tunning also has been done to find the best parameters which gives the best results for the model.
+
+Below are the best parameters used in the final model creation:-
+Best Parameters: {'rf__max_depth': 30, 'rf__min_samples_leaf': 1, 'rf__min_samples_split': 2, 'rf__n_estimators': 100}
+
+Code for model creation is [here](https://github.com/SiddharthGoel/MushroomBinaryClassification/blob/master/ModelCreation.ipynb)
 
 A machine learning pipeline was created to handle preprocessing steps and the model training process. This pipeline was then serialized and saved for deployment purposes.
 
@@ -47,7 +52,7 @@ A machine learning pipeline was created to handle preprocessing steps and the mo
 
 The Streamlit app provides an intuitive interface for users to input mushroom features and receive predictions on whether a mushroom is edible or not. 
 
-- Try the app [here](https://test-et8j68owdz.streamlit.app/).
+- Try the app [here](https://mushroombinaryclassification-lxhuuke7odvh4l5bzqgcnr.streamlit.app/).
 
 ## Getting Started
 
@@ -93,10 +98,10 @@ The Streamlit app provides an intuitive interface for users to input mushroom fe
 
 ### Predicting Mushroom Edibility
 
-1. Visit the [Streamlit app](https://test-et8j68owdz.streamlit.app/).
+1. Visit the [Streamlit app](https://mushroombinaryclassification-lxhuuke7odvh4l5bzqgcnr.streamlit.app/).
 2. Enter the required mushroom features.
 3. Click on the `Predict` button to see the result.
 
 ## Results
 
-The Random Forest model achieved high accuracy in predicting whether mushrooms are edible or not, making it a reliable tool for mushroom classification.
+The Random Forest model achieved high accuracy of 98.9% in predicting whether mushrooms are edible or not, making it a reliable tool for mushroom classification.
